@@ -52,7 +52,7 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
     RESULT_VARIABLE error_code
     )
   if(error_code)
-    message(FATAL_ERROR "Failed to fetch repository 'https://github.com/google/googletest.git'")
+    message(FATAL_ERROR "Failed to fetch repository 'https://gitee.com/xicoding/googletest.git'")
   endif()
 
   if(is_remote_ref)

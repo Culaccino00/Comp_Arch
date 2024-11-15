@@ -17,7 +17,7 @@ set(error_code 1)
 set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
-    COMMAND "/usr/bin/git"  clone --no-checkout "https://github.com/google/googletest.git" "googletest-src"
+    COMMAND "/usr/bin/git"  clone --no-checkout "https://gitee.com/xicoding/googletest.git" "googletest-src"
     WORKING_DIRECTORY "/home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab1/build/_deps"
     RESULT_VARIABLE error_code
     )
@@ -28,7 +28,7 @@ if(number_of_tries GREATER 1)
           ${number_of_tries} times.")
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to clone repository: 'https://github.com/google/googletest.git'")
+  message(FATAL_ERROR "Failed to clone repository: 'https://gitee.com/xicoding/googletest.git'")
 endif()
 
 execute_process(

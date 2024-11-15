@@ -48,10 +48,10 @@ print_string:                   // 开始输出字符串
 
     // 系统调用号 (sys_write)     // TODO: 请修复此处的系统调用以正常输出字符串
     mov $1, %rax
-    // 文件描述符 (stdout)
-    mov $1, %rdi
     // 指向字符串的指针
     mov %rdi, %rsi
+    // 文件描述符 (stdout)
+    mov $1, %rdi
     // 要写入的字节数
     mov %rdx, %rdx
     // 执行系统调用
