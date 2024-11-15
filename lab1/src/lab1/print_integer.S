@@ -30,8 +30,7 @@ convert_loop:                   // 将整数转换为字符串等待输出
     add $'0', %dl              // 计算对应的ascii码, rdx寄存器的低8位叫dl寄存器
     dec %rdi
     mov %dl, (%rdi)             // 结果写内存
-                                // 判断是否结束, TODO: 请添加判断结束的指令
-    cmp $0, %rax
+    cmp $0, %rax                // 判断是否结束
     jnz convert_loop
 
 find_start:                     // 转换结束，跳过字符串前的所有0
@@ -46,7 +45,7 @@ print_string:                   // 开始输出字符串
     sub %rdi, %rax              // 计算存储的字节数
     mov %rax, %rdx              // 待输出的字节数放入rdx中
 
-    // 系统调用号 (sys_write)     // TODO: 请修复此处的系统调用以正常输出字符串
+    // 系统调用号 (sys_write)    
     mov $1, %rax
     // 指向字符串的指针
     mov %rdi, %rsi
