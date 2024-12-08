@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/src/lab3/gemm_kernel_baseline.S
+
+/home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/src/lab3/gemm_kernel_opt_loop_unrolling.S
+

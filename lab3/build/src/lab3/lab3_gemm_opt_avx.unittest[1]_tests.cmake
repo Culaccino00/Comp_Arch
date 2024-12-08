@@ -1,0 +1,7 @@
+add_test( gemm_kernel_opt_avx.test0 /home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/build/dist/bins/lab3_gemm_opt_avx.unittest [==[--gtest_filter=gemm_kernel_opt_avx.test0]==] --gtest_also_run_disabled_tests)
+set_tests_properties( gemm_kernel_opt_avx.test0 PROPERTIES WORKING_DIRECTORY /home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/build/src/lab3)
+add_test( gemm_kernel_opt_avx.test1 /home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/build/dist/bins/lab3_gemm_opt_avx.unittest [==[--gtest_filter=gemm_kernel_opt_avx.test1]==] --gtest_also_run_disabled_tests)
+set_tests_properties( gemm_kernel_opt_avx.test1 PROPERTIES WORKING_DIRECTORY /home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/build/src/lab3)
+add_test( gemm_kernel_opt_avx.test2 /home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/build/dist/bins/lab3_gemm_opt_avx.unittest [==[--gtest_filter=gemm_kernel_opt_avx.test2]==] --gtest_also_run_disabled_tests)
+set_tests_properties( gemm_kernel_opt_avx.test2 PROPERTIES WORKING_DIRECTORY /home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/build/src/lab3)
+set( lab3_gemm_opt_avx.unittest_TESTS gemm_kernel_opt_avx.test0 gemm_kernel_opt_avx.test1 gemm_kernel_opt_avx.test2)

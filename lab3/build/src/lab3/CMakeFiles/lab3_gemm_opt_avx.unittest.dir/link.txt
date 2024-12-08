@@ -1,0 +1,1 @@
+/usr/bin/g++     CMakeFiles/lab3_gemm_opt_avx.unittest.dir/test_gemm_kernel_opt_avx.cpp.o CMakeFiles/lab3_gemm_opt_avx.unittest.dir/gemm_kernel_opt_avx.S.o  -o ../../dist/bins/lab3_gemm_opt_avx.unittest  ../../lib/libgtest.a ../../lib/libgtest_main.a ../../lib/libgtest.a -lpthread 

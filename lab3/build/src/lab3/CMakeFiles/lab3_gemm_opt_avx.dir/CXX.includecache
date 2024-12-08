@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/src/lab3/gemm_kernel_opt.h
+cstdint
+-
+
+/home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/src/lab3/gemm_kernel_opt_avx.cpp
+sys/time.h
+-
+cstring
+-
+iostream
+-
+cmath
+-
+sstream
+-
+cassert
+-
+gemm_kernel_opt.h
+/home/culaccino/WorkSpace/VSCodeWorkSpace/comp_arch/lab3/src/lab3/gemm_kernel_opt.h
+

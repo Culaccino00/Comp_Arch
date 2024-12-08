@@ -1,0 +1,1 @@
+/usr/bin/g++     CMakeFiles/lab3_gemm_opt_avx.dir/gemm_kernel_opt_avx.cpp.o CMakeFiles/lab3_gemm_opt_avx.dir/gemm_kernel_opt_avx.S.o CMakeFiles/lab3_gemm_opt_avx.dir/gemm_kernel_baseline.S.o  -o ../../dist/bins/lab3_gemm_opt_avx 
